@@ -146,7 +146,7 @@ public class AutoCheckin {
 
 	public static void main(String[] args) throws Exception {
 		String[] users = { "blue_ranger@126.com", "weiwei_mi@yeah.net", "xue_ranger@yeah.net" };
-		String pwd = "";
+		String pwd = System.getProperty("pwd");
 		for (String t : users) {
 			try {
 				System.out.println("auto checkin " + t);
